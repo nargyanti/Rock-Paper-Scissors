@@ -1,3 +1,15 @@
+#**GROUP FINAL PROJECT - MACHINE LEARNING**
+## Topic: Image Processing - Rock Paper Scissors
+---
+## By Group 1 TI-2H: 
+1. Abdul Rohman - 1941720022
+2. De Roger Baggio Bryant - 1941720238
+3. Lelyta Salsabila - 1941720026
+4. Nabilah Argyanti Ardyningrum - 1941720083
+5. Rajendra Rakha Arya Prabaswara - 1941720080
+6. Widiareta Safitri - 1941720081
+---
+
 ## **HOW TO USE**
 
 1. You must download python and install it in your text editor / IDE.
