@@ -1,4 +1,4 @@
-#**GROUP FINAL PROJECT - MACHINE LEARNING**
+# **GROUP FINAL PROJECT - MACHINE LEARNING**
 ## Topic: Image Processing - Rock Paper Scissors
 ---
 ## By Group 1 TI-2H: 
