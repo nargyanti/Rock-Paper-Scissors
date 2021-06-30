@@ -22,3 +22,5 @@
 8. Then run the project with type this in terminal:
    
         flask run
+
+Notebook Version: https://colab.research.google.com/drive/122jaqEE34fNT6FxJJ38sE1hKW1s8QoXm#scrollTo=oWceN-ozGoTI 
