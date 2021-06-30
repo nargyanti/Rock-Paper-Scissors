@@ -1,0 +1,66 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}
+Rock Paper Scissors
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{ url_for('.static', filename='style.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="center">
+    <div>
+        <h1 class="white">Python Machine Learning</h1>
+        <h2 class="white">Rock Paper Scissors Game</h2>
+    </div>
+
+    <h1 class="white">VS</h1>
+    <div class="row align-items-center">
+        <div class="col-md-5 col-md-offset-1">
+            <h1 class=" white">Player</h1>
+            <div class="img-container">
+                <!--the three icons: default, ok file (img), error file (not an img)-->
+                <h1 class="imgupload">
+                    <img src="{{ url_for('static', filename='uploads/' + filename) }}" style="height:200px">
+                </h1>
+                <p></p>
+            </div>
+            <h2>{{ player }}</h2>
+        </div>
+
+        <div class="col-md-5">
+            <h1 class="white">Computer</h1>
+            <div class="img-container">
+                <!--the three icons: default, ok file (img), error file (not an img)-->
+                <h1 class="imgupload">
+                    <img src="{{ url_for('static', filename=bot) }}.png" style="height: 200px;" />
+                </h1>
+            </div>
+            <h2>{{ bot }}</h2>
+        </div>
+    </div>
+
+    <div class="center">
+        <h1 class="white">WINNER</h1>
+        <div class="img-container">
+            <!--the three icons: default, ok file (img), error file (not an img)-->
+            <h1 class="imgupload">
+                {% if winner == 'player' %}
+                <img src="{{ url_for('static', filename='uploads/' + filename) }}" style="height:200px">
+                {% else %}
+                <img src="{{ url_for('static', filename=bot) }}.png" style="height: 200px;" />
+                {% endif %}
+            </h1>
+        </div>
+        <h2 class="white">{{ winorlose }}</h2>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('.static', filename='script.js') }}"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+{{super()}}
+{% endblock %}
